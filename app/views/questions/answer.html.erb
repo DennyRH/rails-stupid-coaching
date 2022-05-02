@@ -1,0 +1,16 @@
+
+<div class="resp">
+  <p><%=@answer%></p>
+  <p>-You</p>
+</div>
+<div class="resp">
+  <p><% if @answer == 'I am going to work' %>
+    <%='Great!'%>
+  <% elsif @answer.include?('?') %>
+    <%='Silly question, get dressed and go to work!'%>
+    <% else %>
+    <%='I dont\'t care, get dressed an go to work!'%>
+  <% end %></p>
+  <p>-Your coach</p>
+</div>
+<a href="/ask">Ask a new question</a>
